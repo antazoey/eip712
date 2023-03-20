@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html class="writer-html5" lang="en" >
 <head>
-  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Messages &mdash; eip712  documentation</title>
@@ -20,9 +20,7 @@
         <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
         <script src="../_static/jquery.js"></script>
         <script src="../_static/underscore.js"></script>
-        <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
         <script src="../_static/doctools.js"></script>
-        <script src="../_static/sphinx_highlight.js"></script>
     <script src="../_static/js/theme.js"></script>
     <script src="../_static/custom.js"></script>
   <script>
@@ -66,14 +64,7 @@
 <p class="caption" role="heading"><span class="caption-text">Python Reference</span></p>
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="common.html">Common</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Messages</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#eip712.messages.EIP712Message"><code class="docutils literal notranslate"><span class="pre">EIP712Message</span></code></a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#eip712.messages.EIP712Message.signable_message"><code class="docutils literal notranslate"><span class="pre">EIP712Message.signable_message</span></code></a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="#eip712.messages.EIP712Type"><code class="docutils literal notranslate"><span class="pre">EIP712Type</span></code></a></li>
-</ul>
-</li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Messages</a></li>
 </ul>
 
         </div>
@@ -102,17 +93,17 @@
            <div itemprop="articleBody">
              
   <section id="module-eip712.messages">
-<span id="messages"></span><h1>Messages<a class="headerlink" href="#module-eip712.messages" title="Permalink to this heading"></a></h1>
+<span id="messages"></span><h1>Messages<a class="headerlink" href="#module-eip712.messages" title="Permalink to this headline"></a></h1>
 <p>Message classes for typed structured data hashing and signing in Ethereum.</p>
 <dl class="py class">
 <dt class="sig sig-object py" id="eip712.messages.EIP712Message">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">eip712.messages.</span></span><span class="sig-name descname"><span class="pre">EIP712Message</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">_name_</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">_version_</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">_chainId_</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">int</span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">_verifyingContract_</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">_salt_</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">bytes</span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#eip712.messages.EIP712Message" title="Permalink to this definition"></a></dt>
-<dd><p>Bases: <a class="reference internal" href="#eip712.messages.EIP712Type" title="eip712.messages.EIP712Type"><code class="xref py py-class docutils literal notranslate"><span class="pre">EIP712Type</span></code></a></p>
+<dd><p>Bases: <a class="reference internal" href="#eip712.messages.EIP712Type" title="eip712.messages.EIP712Type"><code class="xref py py-class docutils literal notranslate"><span class="pre">eip712.messages.EIP712Type</span></code></a></p>
 <p>Container for EIP-712 messages with type information, domain separator
 parameters, and the message object.</p>
 <dl class="py property">
 <dt class="sig sig-object py" id="eip712.messages.EIP712Message.signable_message">
-<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">signable_message</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">SignableMessage</span></em><a class="headerlink" href="#eip712.messages.EIP712Message.signable_message" title="Permalink to this definition"></a></dt>
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">signable_message</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">eth_account.messages.SignableMessage</span></em><a class="headerlink" href="#eip712.messages.EIP712Message.signable_message" title="Permalink to this definition"></a></dt>
 <dd><p>The current message as a <code class="xref py py-class docutils literal notranslate"><span class="pre">SignableMessage</span></code> named tuple instance.</p>
 </dd></dl>
 
